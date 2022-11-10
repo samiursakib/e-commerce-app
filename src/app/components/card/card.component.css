@@ -1,0 +1,91 @@
+.example-card {
+    display: flex;
+    flex-flow: column wrap;
+    width: 250px;
+    margin: 50px;
+    background: #333;
+    color: #bbb;
+}
+
+.mat-card {
+    padding: 0;
+}
+
+.card-image-container {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.card-image-container img {
+    background-size: cover;
+    width: 100%;
+}
+
+.card-details {
+    padding: 15px;
+}
+
+.card-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-header-name {
+    font-size: 18px;
+    font-weight: 100;
+    padding: 3px 0;
+}
+
+.card-header-shortname {
+    font-size: 14px;
+    color: #aaa;
+}
+
+.card-description {
+    width: 100%;
+    height: 40px;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: clip;
+    font-weight: 100;
+}
+
+.mat-card-content {
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+.card-info {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    font-weight: 400;
+    padding: 10px 0px 5px 0px;
+}
+
+.card-actions {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+}
+
+.card-actions button {
+    padding: 10px 17px;
+    background: #bbb;
+    color: #222;
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    font-weight: 200;
+    transition: all 0.3s ease;
+}
+
+.card-actions button:hover {
+    background: #222;
+    color: #bbb;
+}
+
+.card-actions .add-cart-button {
+    flex-grow: 1;
+}
