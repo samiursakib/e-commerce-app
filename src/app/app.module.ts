@@ -11,6 +11,9 @@ import { ProductsComponent } from './components/products/products.component';
 import { CardComponent } from './components/card/card.component';
 import { ItemComponent } from './components/item/item.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
+import { MatTableModule } from '@angular/material/table';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -27,9 +30,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatMenuModule,
-    MatCardModule
+    MatCardModule,
+    MatPaginatorModule,
+    MatTableModule,
+    FontAwesomeModule
   ],
-  providers: [],
+  providers: [MatPaginator],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

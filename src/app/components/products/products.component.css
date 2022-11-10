@@ -1,0 +1,56 @@
+.mat-elevation-z8 {
+    padding: 100px;
+    background: #333;
+    height: 100vh;
+}
+
+table {
+    width: 100%;
+    background: #333;
+}
+
+.mat-header-cell {
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.mat-form-field.mat-focused:focus .mat-form-field-ripple {
+    background: #fff;
+}
+
+.add-product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-product .text {
+    width: 100%;
+    padding: 15px 50px;
+    text-align: center;
+    background: #bbb;
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.add-product .text:hover {
+    background: #888;
+}
+
+.actions * {
+    font-size: 18px;
+    color: #bbb;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.actions *:hover {
+    color: #888;
+}
+
+.delete {
+    margin-left: 30px;
+}

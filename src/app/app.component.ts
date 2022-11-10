@@ -1,4 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
+import { ItemInterface, ITEMS } from 'src/assets/data';
 
 @Component({
   selector: 'app-root',
@@ -8,6 +9,11 @@ import { Component, ViewChild } from '@angular/core';
 
 export class AppComponent {
   title: string = 'Hello world';
+  items: ItemInterface[] = ITEMS;
+  
+  ngOnInit() {
+    
+  }
 }
 
 
@@ -16,9 +22,5 @@ export class AppComponent {
   templateUrl: './app.component.html',
 })
 
-export class HeaderComponent {
-  // @ViewChild(MatMenuTrigger) trigger: MatMenuTrigger;
-  // someMethod() {
-  //   this.trigger.openMenu();
-  // }
-}
+export class HeaderComponent {}
+

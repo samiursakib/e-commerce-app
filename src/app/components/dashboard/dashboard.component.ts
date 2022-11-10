@@ -8,10 +8,9 @@ import { ItemInterface, ITEMS } from 'src/assets/data';
 })
 export class DashboardComponent implements OnInit {
   items: ItemInterface[] = ITEMS;
+  data: string = 'something'
   constructor() { }
 
-  ngOnInit(): void {
-    console.log(this.items);
-  }
+  ngOnInit(): void { }
 
 }

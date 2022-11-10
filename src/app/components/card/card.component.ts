@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ItemInterface, ITEMS } from 'src/assets/data';
+import { ItemInterface } from 'src/assets/data';
 
 @Component({
   selector: 'app-card',
@@ -10,8 +10,6 @@ export class CardComponent implements OnInit {
   @Input() item?: ItemInterface;
   constructor() { }
 
-  ngOnInit(): void {
-    console.log(this.item?.name);
-  }
+  ngOnInit(): void { }
 
 }
