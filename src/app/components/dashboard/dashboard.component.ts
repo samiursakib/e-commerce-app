@@ -7,10 +7,16 @@ import { ItemInterface, ITEMS } from 'src/assets/data';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
-  items: ItemInterface[] = ITEMS;
-  data: string = 'something'
-  constructor() { }
+  items: ItemWithIdInterface[] = ITEMS.map(obj => ({...obj, id: (Math.random() * 1e16).toString()}));
+  
+  constructor() { };
 
-  ngOnInit(): void { }
+  ngOnInit(): void {
+    
+  };
 
+};
+
+export interface ItemWithIdInterface extends ItemInterface {
+  id: string
 }

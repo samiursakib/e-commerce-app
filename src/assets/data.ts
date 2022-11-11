@@ -4,7 +4,7 @@ export interface ItemInterface {
     price: number,
     imageUrl: string,
     quantity: number,
-    description: string
+    description: string,
 };
 
 export let ITEMS: ItemInterface[] = [
