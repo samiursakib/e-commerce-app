@@ -12,6 +12,7 @@ export class CardComponent implements OnInit {
   @Input() item?: ItemInterface;
   count: number = 0;
   isSelected: boolean = false;
+  // itemWithId: 
   faPlus = faPlus;
   faMinus = faMinus;
 
@@ -37,8 +38,9 @@ export class CardComponent implements OnInit {
     if(this.count > 0) {
       this.item!.quantity++;
       this.count--;
-      console.log(this.count, this.item!.quantity)
     }
   }
+
+  
 
 }
