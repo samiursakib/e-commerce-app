@@ -12,7 +12,6 @@ export class CardComponent implements OnInit {
   @Input() item?: ItemInterface;
   count: number = 0;
   isSelected: boolean = false;
-  // itemWithId: 
   faPlus = faPlus;
   faMinus = faMinus;
 
