@@ -10,7 +10,7 @@ const app = express();
 const upload = multer({ dest: 'uploads/'});
 
 app.use(express.json());
-app.use(express.urlencoded());
+app.use(express.urlencoded({ extended: true }));
 mongoose.connect(uri,
     { useNewUrlParser: true, useUnifiedTopology: true },
     () => console.log('mongoose connected')
@@ -58,4 +58,8 @@ app.post('/test', (req, res) => {
     console.log(req.body);
     res.send('posted in home page');
 });
-app.listen(port, () => console.log('app listening on ', port));
+// app.listen(port, () => console.log('app listening on ', port));
+
+app.listen(process.env.PORT || 3000, function(){
+    console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+  });
