@@ -1,10 +1,11 @@
+require('dotenv').config();
+
 const express = require('express');
 const mongoose = require('mongoose');
 const multer = require('multer');
 
 const Product = require('./models');
 
-const port = process.env.PORT | 3000;
 const uri = 'mongodb+srv://cluster0.yyp8n.mongodb.net/?authSource=%24external&authMechanism=MONGODB-X509&retryWrites=true&w=majority';
 const app = express();
 const upload = multer({ dest: 'uploads/'});
@@ -60,6 +61,6 @@ app.post('/test', (req, res) => {
 });
 // app.listen(port, () => console.log('app listening on ', port));
 
-app.listen(process.env.PORT || 3000, function(){
-    console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
-  });
+app.listen(process.env.PORT, function(){
+    console.log("Express server listening on port %d in %s mode", process.env.PORT);
+});
